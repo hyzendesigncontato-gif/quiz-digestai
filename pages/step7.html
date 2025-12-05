@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Etapa 7</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-header">
+            <img src="../images/logotipo.png" alt="DigestAI">
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 47%;"></div>
+        </div>
+
+        <div class="question-header">
+            <h1>Sua <span class="highlight-green">digestão é lenta</span> e te deixa cansado(a) depois de comer?</h1>
+        </div>
+
+        <div class="options-emoji">
+            <div class="option-emoji-card" onclick="selectOption(this, 'muito')">
+                <div class="emoji-icon">😴</div>
+                <span class="option-text">Muito</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'moderadamente')">
+                <div class="emoji-icon">😪</div>
+                <span class="option-text">Moderadamente</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'um-pouco')">
+                <div class="emoji-icon">🙂</div>
+                <span class="option-text">Um pouco</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'nao')">
+                <div class="emoji-icon">😊</div>
+                <span class="option-text">Não</span>
+                <div class="arrow-icon">›</div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script7.js"></script>
+</body>
+</html>
+

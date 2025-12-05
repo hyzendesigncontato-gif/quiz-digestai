@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Etapa 9</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-header">
+            <img src="../images/logotipo.png" alt="DigestAI">
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 60%;"></div>
+        </div>
+
+        <div class="question-header">
+            <h1>Você <span class="highlight-green">evita certos alimentos</span> porque sabe que vai passar mal?</h1>
+        </div>
+
+        <div class="options-emoji">
+            <div class="option-emoji-card" onclick="selectOption(this, 'sim-varios')">
+                <div class="emoji-icon">🚫</div>
+                <span class="option-text">Sim, vários</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'alguns')">
+                <div class="emoji-icon">⚠️</div>
+                <span class="option-text">Alguns</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'um-ou-dois')">
+                <div class="emoji-icon">🤔</div>
+                <span class="option-text">Um ou dois</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'nao-evito')">
+                <div class="emoji-icon">😊</div>
+                <span class="option-text">Não evito nada</span>
+                <div class="arrow-icon">›</div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script9.js"></script>
+</body>
+</html>
+

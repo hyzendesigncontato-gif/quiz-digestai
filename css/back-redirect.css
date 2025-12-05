@@ -1,0 +1,279 @@
+/* Back Redirect - Design Limpo Verde (igual ao quiz) */
+
+/* Alerta Topo */
+.alert-box {
+    background: #ff4757;
+    color: #fff;
+    padding: 14px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+    animation: pulse-alert 2s ease-in-out infinite;
+}
+
+@keyframes pulse-alert {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(255, 71, 87, 0.6);
+    }
+}
+
+.alert-box p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Trust Badges - Estilos Base */
+.trust-badges {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: #666;
+}
+
+.badge-icon {
+    font-size: 22px;
+    color: #28a745;
+}
+
+.badge-text {
+    text-align: left;
+    line-height: 1.3;
+}
+
+.badge-text strong {
+    color: #000;
+    font-weight: 700;
+    display: block;
+}
+
+/* Responsivo Mobile */
+@media (max-width: 480px) {
+    .alert-box p {
+        font-size: 13px;
+    }
+
+    /* Ajusta espaçamentos gerais */
+    .container {
+        padding: 15px;
+    }
+
+    /* Logo menor */
+    .logo-header img {
+        height: 100px;
+        max-width: 100%;
+    }
+
+    /* Headline */
+    .question-header h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    /* Contador */
+    .countdown-section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .countdown-header {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .countdown-item {
+        padding: 10px 16px;
+        min-width: 70px;
+    }
+
+    .countdown-number {
+        font-size: 32px;
+    }
+
+    .countdown-separator {
+        font-size: 32px;
+    }
+
+    .countdown-warning {
+        font-size: 12px;
+    }
+
+    /* Seções */
+    .protocol-section {
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+
+    .protocol-card {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .protocol-card i,
+    .protocol-card span:first-child {
+        font-size: 16px;
+    }
+
+    /* Garantia/Cupom */
+    .guarantee-section {
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+
+    .guarantee-badge {
+        font-size: 18px;
+    }
+
+    .guarantee-text {
+        font-size: 13px;
+    }
+
+    /* Preço */
+    .price-section {
+        margin-bottom: 20px;
+    }
+
+    .price-header {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .price-content {
+        padding: 12px 15px;
+    }
+
+    .price-title {
+        font-size: 14px;
+    }
+
+    .price-from {
+        font-size: 11px;
+    }
+
+    .price-value {
+        font-size: 22px;
+    }
+
+    .price-installment {
+        font-size: 11px;
+    }
+
+    .cta-button-large {
+        font-size: 14px;
+        padding: 14px 18px;
+        margin: 0 15px 12px 15px;
+        width: calc(100% - 30px);
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .benefit-item {
+        padding: 12px 10px;
+    }
+
+    .benefit-icon {
+        font-size: 24px;
+    }
+
+    .benefit-text {
+        font-size: 11px;
+    }
+
+    /* Feedbacks */
+    .feedback-card {
+        padding: 14px;
+    }
+
+    .feedback-profile img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .feedback-info h3 {
+        font-size: 14px;
+    }
+
+    .feedback-meta {
+        font-size: 12px;
+    }
+
+    .stars {
+        font-size: 12px;
+    }
+
+    .feedback-text {
+        font-size: 13px;
+    }
+
+    /* Botão CTA */
+    .cta-button {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    /* Trust Badges - LINHA HORIZONTAL no mobile (3 colunas) */
+    .trust-badges {
+        flex-direction: row !important;
+        padding: 18px 20px !important;
+        gap: 15px !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+    }
+
+    .badge-item {
+        font-size: 10px !important;
+        gap: 6px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+        flex: 0 0 auto !important;
+        text-align: center !important;
+    }
+
+    .badge-icon {
+        font-size: 26px !important;
+        flex-shrink: 0 !important;
+        margin-bottom: 4px !important;
+    }
+
+    .badge-text {
+        line-height: 1.2 !important;
+        text-align: center !important;
+        font-size: 10px !important;
+    }
+
+    .badge-text br {
+        display: block !important;
+    }
+
+    .badge-text strong {
+        display: block !important;
+        font-size: 11px !important;
+        font-weight: 700 !important;
+    }
+}

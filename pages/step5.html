@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Etapa 5</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-header">
+            <img src="../images/logotipo.png" alt="DigestAI">
+        </div>
+
+        <!-- Barra de progresso -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 33%;"></div>
+        </div>
+
+        <!-- Título -->
+        <div class="question-header">
+            <h1>Depois de consumir <span class="highlight-green">leite, pão ou massas</span>, você sente desconforto?</h1>
+        </div>
+
+        <!-- Imagem demonstrativa -->
+        <div class="question-image">
+            <img src="../images/5.jpg" alt="Desconforto alimentar">
+        </div>
+
+        <!-- Opções sem imagem -->
+        <div class="options-simple">
+            <div class="option-simple" onclick="selectOption(this, 'sempre')">
+                <span class="option-text">Sempre</span>
+                <div class="radio-circle"></div>
+            </div>
+
+            <div class="option-simple" onclick="selectOption(this, 'frequentemente')">
+                <span class="option-text">Frequentemente</span>
+                <div class="radio-circle"></div>
+            </div>
+
+            <div class="option-simple" onclick="selectOption(this, 'pouco')">
+                <span class="option-text">Pouco</span>
+                <div class="radio-circle"></div>
+            </div>
+
+            <div class="option-simple" onclick="selectOption(this, 'nunca')">
+                <span class="option-text">Nunca</span>
+                <div class="radio-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script5.js"></script>
+</body>
+</html>
+

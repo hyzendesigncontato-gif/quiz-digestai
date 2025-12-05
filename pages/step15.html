@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo - DigestAI</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.js"></script>
+    <script src="../js/confetti.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="protocol-page">
+    <div class="protocol-container">
+        <!-- Logo -->
+        <div class="logo-header">
+            <img src="../images/logotipo.png" alt="DigestAI">
+        </div>
+
+        <!-- Barra de progresso -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 93%;"></div>
+        </div>
+
+        <!-- Header -->
+        <div class="protocol-header">
+            <h1>Seu <span class="highlight-green">Protocolo Intestinal Blindado</span> Está Pronto</h1>
+            <p class="protocol-subtitle">Análise completa gerada pela IA DigestAI</p>
+        </div>
+
+        <!-- Bloco 1: Diagnóstico -->
+        <div class="protocol-section">
+            <h2 class="section-title"><i class="fas fa-chart-bar"></i> Diagnóstico do Seu Corpo</h2>
+            <div class="diagnosis-grid">
+                <div class="diagnosis-item">
+                    <p class="diagnosis-label">Intolerância à Lactose</p>
+                    <div class="diagnosis-bar">
+                        <div class="diagnosis-fill" style="width: 78%;"></div>
+                    </div>
+                    <p class="diagnosis-value">78%</p>
+                </div>
+                <div class="diagnosis-item">
+                    <p class="diagnosis-label">Intolerância ao Glúten</p>
+                    <div class="diagnosis-bar">
+                        <div class="diagnosis-fill" style="width: 64%;"></div>
+                    </div>
+                    <p class="diagnosis-value">64%</p>
+                </div>
+                <div class="diagnosis-item">
+                    <p class="diagnosis-label">Síndrome do Intestino Irritável</p>
+                    <div class="diagnosis-bar">
+                        <div class="diagnosis-fill" style="width: 82%;"></div>
+                    </div>
+                    <p class="diagnosis-value">82%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrossel de Depoimentos -->
+        <div class="testimonials-section">
+            <h2 class="section-title"><i class="fas fa-comments"></i> Depoimentos Reais</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="../images/depoimento1.png" alt="Depoimento 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../images/depoimento2.png" alt="Depoimento 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../images/depoimento3.png" alt="Depoimento 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../images/depoimento4.png" alt="Depoimento 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../images/depoimento5.png" alt="Depoimento 5">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button prev" onclick="prevSlide()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next" onclick="nextSlide()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators">
+                    <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+                    <span class="carousel-dot" onclick="goToSlide(1)"></span>
+                    <span class="carousel-dot" onclick="goToSlide(2)"></span>
+                    <span class="carousel-dot" onclick="goToSlide(3)"></span>
+                    <span class="carousel-dot" onclick="goToSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco 2: Protocolo Gerado -->
+        <div class="protocol-section">
+            <h2 class="section-title"><i class="fas fa-bullseye"></i> Seu Protocolo Gerado</h2>
+            <div class="protocol-cards">
+                <div class="protocol-card"><i class="fas fa-check-circle"></i> Lista de alimentos seguros para consumo imediato</div>
+                <div class="protocol-card"><i class="fas fa-exclamation-triangle"></i> Lista de gatilhos alimentares identificados</div>
+                <div class="protocol-card"><i class="fas fa-calendar-alt"></i> Plano de 7 dias para estabilização intestinal</div>
+                <div class="protocol-card"><i class="fas fa-robot"></i> Recomendações personalizadas da IA</div>
+                <div class="protocol-card"><i class="fas fa-map-marked-alt"></i> Mapa digestivo personalizado</div>
+            </div>
+        </div>
+
+        <!-- Bloco 3: O que você vai receber -->
+        <div class="protocol-section">
+            <h2 class="section-title"><i class="fas fa-gift"></i> O que você vai receber hoje</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-lock benefit-icon"></i>
+                    <span class="benefit-text">Acesso ao<br>DigestAI</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-book benefit-icon"></i>
+                    <span class="benefit-text">Guia anti-<br>intolerâncias</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-ban benefit-icon"></i>
+                    <span class="benefit-text">15 alimentos<br>proibidos</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-utensils benefit-icon"></i>
+                    <span class="benefit-text">Cardápio<br>emergencial</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-infinity benefit-icon"></i>
+                    <span class="benefit-text">Acesso<br>vitalício</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-sync-alt benefit-icon"></i>
+                    <span class="benefit-text">Atualizações<br>grátis</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco 4: Garantia -->
+        <div class="guarantee-section">
+            <div class="guarantee-content">
+                <img src="../images/garantia.png" alt="Garantia" class="guarantee-logo">
+                <div class="guarantee-badge">✓ Garantia 7 Dias – Zero Risco</div>
+                <p class="guarantee-text">Se você não sentir clareza alimentar ou redução dos sintomas, devolvemos 100% do seu investimento.</p>
+            </div>
+        </div>
+
+        <!-- VSL Mockup -->
+        <div class="vsl-section">
+            <h2 class="section-title"><i class="fas fa-play-circle"></i> Veja Como Funciona</h2>
+            <div class="vsl-mockup">
+                <div class="vsl-container">
+                    <iframe 
+                        src="" 
+                        title="Vídeo DigestAI"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p class="vsl-caption">🎥 Assista ao vídeo e descubra como o DigestAI pode transformar sua saúde digestiva</p>
+            </div>
+        </div>
+
+        <!-- Contador de Tempo -->
+        <div class="countdown-section">
+            <div class="countdown-header">
+                <i class="fas fa-clock"></i>
+                <span>Oferta Especial Expira Em:</span>
+            </div>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">15</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+            <p class="countdown-warning">⚠️ Após o tempo, o preço volta para R$ 97,00</p>
+        </div>
+
+        <!-- Bloco 5: Preço -->
+        <div class="price-section">
+            <div class="price-header">Protocolo Completo</div>
+            <div class="price-content">
+                <div class="price-left">
+                    <h2 class="price-title">DigestAI Sistema<br>Digestivo Blindado</h2>
+                </div>
+                <div class="price-right">
+                    <p class="price-from">de 49,90 por</p>
+                    <p class="price-value">R$ 27,90</p>
+                    <p class="price-installment">à vista</p>
+                </div>
+            </div>
+            <button class="cta-button-large pulse" onclick="activateProtocol()">
+                QUERO COMEÇAR HOJE! 😍
+            </button>
+            <div class="trust-badges">
+                <div class="badge-item">
+                    <span class="badge-icon">✓</span>
+                    <span class="badge-text">Compra<br><strong>SEGURA</strong></span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon">🏆</span>
+                    <span class="badge-text">Satisfação<br><strong>GARANTIDA</strong></span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon">🔒</span>
+                    <span class="badge-text">Privacidade<br><strong>PROTEGIDA</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloco 6: FAQ -->
+        <div class="faq-section">
+            <h2 class="section-title"><i class="fas fa-question-circle"></i> Perguntas Frequentes</h2>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">Em quanto tempo começo a notar diferença? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">A maioria dos usuários relata melhora nos primeiros 3-5 dias seguindo o protocolo personalizado.</div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">A IA é difícil de usar? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Não! O sistema é intuitivo e foi desenvolvido para ser usado por qualquer pessoa, sem necessidade de conhecimento técnico.</div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">Serve para lactose, glúten e FODMAP? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Sim! O DigestAI identifica múltiplos gatilhos alimentares, incluindo lactose, glúten, FODMAP e outros.</div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">Este protocolo substitui médico? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Não. Esta é uma ferramenta de apoio para identificação de gatilhos alimentares. Sempre consulte um profissional de saúde.</div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">Por quanto tempo terei acesso? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Acesso vitalício! Você paga uma única vez e tem acesso para sempre, incluindo todas as atualizações futuras.</div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="disclaimer">
+            <p>Esta análise é preliminar e não substitui acompanhamento profissional. DigestAI auxilia na identificação de possíveis gatilhos alimentares.</p>
+        </div>
+    </div>
+
+    <script src="../js/script15.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Etapa 2</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-header">
+            <img src="../images/logotipo.png" alt="DigestAI">
+        </div>
+
+        <!-- Barra de progresso -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 13%;"></div>
+        </div>
+
+        <!-- Título e subtítulo -->
+        <div class="question-header">
+            <h1>Quanto o seu <span class="highlight-green">desconforto</span> intestinal te <span class="highlight-green">atrapalha</span> no dia a dia?</h1>
+            <p class="subtitle">Com nosso protocolo, já ajudamos milhares de pessoas a identificar seus gatilhos alimentares e recuperar o controle do próprio corpo — sem dieta maluca.</p>
+        </div>
+
+        <!-- Opções em grid -->
+        <div class="options-grid-2col">
+            <div class="option-card-image" onclick="selectOption(this, 'muito')">
+                <div class="option-image">
+                    <img src="../images/2.png" alt="Muito">
+                </div>
+                <div class="option-label">
+                    <span class="option-text">Muito</span>
+                    <div class="radio-circle"></div>
+                </div>
+            </div>
+
+            <div class="option-card-image" onclick="selectOption(this, 'moderadamente')">
+                <div class="option-image">
+                    <img src="../images/2.png" alt="Moderadamente">
+                </div>
+                <div class="option-label">
+                    <span class="option-text">Moderadamente</span>
+                    <div class="radio-circle"></div>
+                </div>
+            </div>
+
+            <div class="option-card-image" onclick="selectOption(this, 'pouco')">
+                <div class="option-image">
+                    <img src="../images/2.png" alt="Pouco">
+                </div>
+                <div class="option-label">
+                    <span class="option-text">Pouco</span>
+                    <div class="radio-circle"></div>
+                </div>
+            </div>
+
+            <div class="option-card-image" onclick="selectOption(this, 'quase-nunca')">
+                <div class="option-image">
+                    <img src="../images/2.png" alt="Quase nunca">
+                </div>
+                <div class="option-label">
+                    <span class="option-text">Quase nunca</span>
+                    <div class="radio-circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script2.js"></script>
+</body>
+</html>

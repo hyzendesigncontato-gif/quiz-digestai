@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Etapa 12</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-header">
+            <img src="../images/logotipo.png" alt="DigestAI">
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 80%;"></div>
+        </div>
+
+        <div class="question-header">
+            <h1>Você já tentou <span class="highlight-green">descobrir o que te faz mal</span>, mas não consegue identificar?</h1>
+        </div>
+
+        <div class="options-emoji">
+            <div class="option-emoji-card" onclick="selectOption(this, 'sempre')">
+                <div class="emoji-icon">😩</div>
+                <span class="option-text">Sempre</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'frequentemente')">
+                <div class="emoji-icon">😕</div>
+                <span class="option-text">Frequentemente</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'as-vezes')">
+                <div class="emoji-icon">🤔</div>
+                <span class="option-text">Às vezes</span>
+                <div class="arrow-icon">›</div>
+            </div>
+            <div class="option-emoji-card" onclick="selectOption(this, 'nunca')">
+                <div class="emoji-icon">😊</div>
+                <span class="option-text">Nunca</span>
+                <div class="arrow-icon">›</div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script12.js"></script>
+</body>
+</html>
+

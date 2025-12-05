@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Etapa 4</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-header">
+            <img src="../images/logotipo.png" alt="DigestAI">
+        </div>
+
+        <!-- Barra de progresso -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 27%;"></div>
+        </div>
+
+        <!-- Título -->
+        <div class="question-header">
+            <h1>Você já teve que <span class="highlight-green">correr pro banheiro</span> depois de uma refeição?</h1>
+        </div>
+
+        <!-- Opções em lista vertical -->
+        <div class="options-list">
+            <div class="option-card-horizontal" onclick="selectOption(this, 'sim-varias-vezes')">
+                <div class="option-image-small">
+                    <img src="../images/4.png" alt="Sim, várias vezes">
+                </div>
+                <span class="option-text">Sim, várias vezes</span>
+                <div class="radio-circle"></div>
+            </div>
+
+            <div class="option-card-horizontal" onclick="selectOption(this, 'as-vezes')">
+                <div class="option-image-small">
+                    <img src="../images/4.png" alt="Às vezes">
+                </div>
+                <span class="option-text">Às vezes</span>
+                <div class="radio-circle"></div>
+            </div>
+
+            <div class="option-card-horizontal" onclick="selectOption(this, 'quase-nunca')">
+                <div class="option-image-small">
+                    <img src="../images/4.png" alt="Quase nunca">
+                </div>
+                <span class="option-text">Quase nunca</span>
+                <div class="radio-circle"></div>
+            </div>
+
+            <div class="option-card-horizontal" onclick="selectOption(this, 'nunca')">
+                <div class="option-image-small">
+                    <img src="../images/4.png" alt="Nunca">
+                </div>
+                <span class="option-text">Nunca</span>
+                <div class="radio-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script4.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+// Template para função selectOption com áudio
+
+function selectOption(element, value) {
+    AudioFeedback.playClick();
+    
+    // Remove seleção anterior
+    document.querySelectorAll('.SELECTOR').forEach(card => {
+        card.classList.remove('selected');
+    });
+    
+    // Adiciona seleção na opção clicada
+    element.classList.add('selected');
+    
+    // Salva a resposta
+    localStorage.setItem('STEP_answer', value);
+    
+    // Aguarda um pouco e vai para próxima etapa
+    setTimeout(() => {
+        AudioFeedback.playSuccess();
+        setTimeout(() => {
+            window.location.href = 'NEXT_STEP.html';
+        }, 200);
+    }, 300);
+}

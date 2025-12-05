@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado - DigestAI</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 70%;"></div>
+        </div>
+
+        <div class="result-header">
+            <h1>Resultado da Sua <span class="highlight-green">Avaliação Intestinal</span></h1>
+        </div>
+
+        <div class="result-card">
+            <div class="result-badge">
+                <span>Análise Preliminar — DigestAI</span>
+            </div>
+
+            <div class="risk-section">
+                <div class="risk-label">
+                    <span>Nível de Risco</span>
+                    <span class="risk-percentage">85%</span>
+                </div>
+                <div class="risk-bar">
+                    <div class="risk-fill" style="width: 85%;"></div>
+                </div>
+                <p class="risk-status">RISCO ALTO</p>
+            </div>
+
+            <div class="indicators">
+                <div class="indicator">
+                    <div class="indicator-icon">🥛</div>
+                    <div class="indicator-content">
+                        <p class="indicator-label">Intolerância à Lactose</p>
+                        <div class="indicator-bar">
+                            <div class="indicator-fill" style="width: 78%;"></div>
+                        </div>
+                        <p class="indicator-value">78%</p>
+                    </div>
+                </div>
+
+                <div class="indicator">
+                    <div class="indicator-icon">🌾</div>
+                    <div class="indicator-content">
+                        <p class="indicator-label">Intolerância ao Glúten</p>
+                        <div class="indicator-bar">
+                            <div class="indicator-fill" style="width: 64%;"></div>
+                        </div>
+                        <p class="indicator-value">64%</p>
+                    </div>
+                </div>
+
+                <div class="indicator">
+                    <div class="indicator-icon">🔬</div>
+                    <div class="indicator-content">
+                        <p class="indicator-label">Síndrome do Intestino Irritável</p>
+                        <div class="indicator-bar">
+                            <div class="indicator-fill" style="width: 82%;"></div>
+                        </div>
+                        <p class="indicator-value">82%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-footer">
+                <p>Este resultado indica sinais fortes de intolerâncias ocultas e sensibilidade digestiva. Continue para ver seu Protocolo Intestinal Blindado.</p>
+            </div>
+        </div>
+
+        <button class="cta-button" onclick="continueToProtocol()">
+            VER MEU PROTOCOLO PERSONALIZADO
+        </button>
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html>
+
