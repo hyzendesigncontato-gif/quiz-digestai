@@ -16,3 +16,8 @@ npm-debug.log*
 # Environment variables
 .env
 .env.local
+
+# Large video files
+*.mp4
+*.mov
+*.avi
