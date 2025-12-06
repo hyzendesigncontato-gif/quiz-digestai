@@ -1,22 +1,24 @@
-// Sistema de detecção de botão voltar e redirecionamento
-(function() {
-    // Adiciona uma entrada no histórico
-    history.pushState(null, null, location.href);
+// UTMIFY Back Redirect Script
+// ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
+const link = 'https://quizdigestai.hyzencompra.shop/pages/back-redirect.html';
+
+function setBackRedirect(url) {
+    let urlBackRedirect = url;
+    urlBackRedirect = urlBackRedirect =
+        urlBackRedirect.trim() +
+        (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+        document.location.search.replace('?', '').toString();
     
-    // Marca que o usuário já viu o back-redirect
-    const hasSeenBackRedirect = sessionStorage.getItem('hasSeenBackRedirect');
+    history.pushState({}, '', location.href);
+    history.pushState({}, '', location.href);
+    history.pushState({}, '', location.href);
     
-    // Detecta quando o usuário tenta voltar
-    window.addEventListener('popstate', function(event) {
-        // Se já viu o back-redirect, deixa navegar normalmente
-        if (hasSeenBackRedirect === 'true') {
-            return;
-        }
-        
-        // Marca que viu o back-redirect
-        sessionStorage.setItem('hasSeenBackRedirect', 'true');
-        
-        // Redireciona para a página de back-redirect
-        window.location.href = '../pages/back-redirect.html';
+    window.addEventListener('popstate', () => {
+        console.log('onpopstate', urlBackRedirect);
+        setTimeout(() => {
+            location.href = urlBackRedirect;
+        }, 1);
     });
-})();
+}
+
+setBackRedirect(link);
